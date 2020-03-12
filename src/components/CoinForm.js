@@ -9,11 +9,11 @@ const CoinForm = (props) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <select name="CoinType" ref={register}>
-        <option value="Bitcoin">Bitcoin</option>
-        <option value="Ethereum">Ethereum</option>
-        <option value="XRP">XRP</option>
-        <option value="Tether">Tether</option>
-        <option value="BitCoin Cash">BitCoin Cash</option>
+        <option value="btc">Bitcoin</option>
+        <option value="eth">Ethereum</option>
+        <option value="xrp">XRP</option>
+        <option value="usdt">Tether</option>
+        <option value="bch">BitCoin Cash</option>
       </select>
 
       <input type="submit" />
