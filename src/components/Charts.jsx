@@ -2,6 +2,7 @@ import React from "react";
 import Chart from "./Chart";
 
 const Charts = ({ coinData ,coinType }) => {
+
   return (
     <div className="charts">
       {coinData.filter(coin => coin.symbol === coinType ).map(coin => (

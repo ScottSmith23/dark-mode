@@ -9,10 +9,9 @@ import "./styles.scss";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  const [coinType, setCoinType] = useState('btc');
+  const [coinType, setCoinType] = useState("btc");
   const getCoinType = (data) =>{
-    setCoinType(data)
-    console.log(data)
+    setCoinType(Object.values(data)[0])
   }
   useEffect(() => {
     axios

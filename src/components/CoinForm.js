@@ -4,7 +4,6 @@ import { useForm } from 'react-hook-form';
 const CoinForm = (props) => {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = data => props.getCoinType(data);
-  console.log(errors);
   
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -14,6 +13,11 @@ const CoinForm = (props) => {
         <option value="xrp">XRP</option>
         <option value="usdt">Tether</option>
         <option value="bch">BitCoin Cash</option>
+        <option value="bsv">BitCoin SV</option>
+        <option value="ltc">Litecoin</option>
+        <option value="eos">EOS</option>
+        <option value="bnb">Binance Coin</option>
+        <option value="xtz">Tezos</option>
       </select>
 
       <input type="submit" />
